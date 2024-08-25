@@ -51,10 +51,10 @@ h2 {
 
 .link-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px; 
-  padding-left: 20px;
+  padding: 20px;
 }
 
 .panel-item {
@@ -65,7 +65,6 @@ h2 {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  max-width: 250px;
   min-width: 150px;
 }
 
@@ -139,10 +138,10 @@ footer {
 
   .link-container {
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .panel-item {
     width: 100%;
-    max-width: 100%;
   }
 }
