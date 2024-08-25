@@ -4,6 +4,7 @@
 		<title>Помощь по Подвалу</title>
 		<link rel="stylesheet" href="style.css" />
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 	<body>
 		<main>
@@ -12,19 +13,19 @@
 					<h2>Ссылки</h2>
 					<div class="link-container">
 						<div class="panel-item">
-							<a href="https://t.me/base_ment_bot">
+							<a href="https://t.me/base_ment_bot" target="_blank">
 								<img src="img/icon.jpg" alt="Бот" />
 								<span>Бот Подвал</span>
 							</a>
 						</div>
 						<div class="panel-item">
-							<a href="https://t.me/base_ment_news">
+							<a href="https://t.me/base_ment_news" target="_blank">
 								<img src="img/icon.jpg" alt="Telegram" />
 								<span>Новости Подвала</span>
 							</a>
 						</div>
 						<div class="panel-item">
-							<a href="https://t.me/base_ment_chat">
+							<a href="https://t.me/base_ment_chat" target="_blank">
 								<img src="img/icon.jpg" alt="Чат" />
 								<span>Чат Подвала</span>
 							</a>
@@ -34,21 +35,23 @@
 
 				<section id="commands">
 					<h2>Команды</h2>
-					<div class="command-item">
-						<h3><code>/start</code></h3>
-						<p><b>Зарегистрироваться в боте</b></p>
-					</div>
-					<div class="command-item">
-						<h3><code>Реф</code></h3>
-						<p><b>Система рефералов</b></p>
-					</div>
-					<div class="command-item">
-						<h3><code>Подвал</code></h3>
-						<p><b>Отобразить ваш подвал</b></p>
-					</div>
-					<div class="command-item">
-						<h3><code>Хранилище</code></h3>
-						<p><b>Отобразить ваше хранилище</b></p>
+					<div class="command-container">
+						<div class="command-item">
+							<h3><code>/start</code></h3>
+							<p><b>Зарегистрироваться в боте</b></p>
+						</div>
+						<div class="command-item">
+							<h3><code>Реф</code></h3>
+							<p><b>Система рефералов</b></p>
+						</div>
+						<div class="command-item">
+							<h3><code>Подвал</code></h3>
+							<p><b>Отобразить ваш подвал</b></p>
+						</div>
+						<div class="command-item">
+							<h3><code>Хранилище</code></h3>
+							<p><b>Отобразить ваше хранилище</b></p>
+						</div>
 					</div>
 				</section>
 			</div>
@@ -57,5 +60,11 @@
 		<footer>
 			<p>&copy; 2023-2024 Подвал</p>
 		</footer>
+		<script>
+			if (navigator.userAgent.indexOf('Telegram') === -1) {
+				alert('Доступ разрешен только в Telegram WebApp.')
+				window.location.href = 'https://t.me/base_ment_bot'
+			}
+		</script>
 	</body>
 </html>
