@@ -54,7 +54,7 @@ h2 {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px; 
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .panel-item {
@@ -66,8 +66,7 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   max-width: 250px;
-  /* Добавлено: */
-  min-width: 150px; /* Минимальная ширина элемента */
+  min-width: 150px;
 }
 
 .panel-item:hover {
