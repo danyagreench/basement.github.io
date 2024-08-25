@@ -63,7 +63,7 @@ h2 {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  width: fit-content; /* Adjust width automatically */
+  max-width: 250px; /* Set a maximum width for the links */
 }
 
 .panel-item:hover {
@@ -140,5 +140,6 @@ footer {
 
   .panel-item {
     width: 100%;
+    max-width: 100%; /* Ensure links take up full width on smaller screens */
   }
 }
