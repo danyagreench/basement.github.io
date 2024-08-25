@@ -53,7 +53,7 @@ h2 {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 20px;
-	padding-left: 20px;
+	padding-left: -20px;
 }
 
 .panel-item {
