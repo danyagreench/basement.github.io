@@ -8,6 +8,7 @@ body {
   align-items: center;
   min-height: 100vh;
   color: #333;
+  overflow-x: hidden;
 }
 
 main {
@@ -50,20 +51,21 @@ h2 {
 
 .link-container {
   display: flex;
-  justify-content: flex-start; /* Move links to the left */
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 10px; /* Add spacing between links */
+  gap: 10px; 
+  padding-left: 10px;
 }
 
 .panel-item {
   text-align: left;
-  padding: 10px; /* Reduce padding */
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  max-width: 250px; /* Set a maximum width for the links */
+  max-width: 250px;
 }
 
 .panel-item:hover {
@@ -75,10 +77,10 @@ h2 {
   align-items: center;
   text-decoration: none;
   color: #333;
-  font-size: 14px; /* Reduce font size */
-  padding: 8px 12px; /* Reduce padding */
-  border-radius: 5px; /* Add rounded corners */
-  background-color: #eee; /* Add subtle background */
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #eee;
   transition: background-color 0.3s ease;
 }
 
@@ -87,7 +89,7 @@ h2 {
 }
 
 .panel-item img {
-  width: 30px; /* Reduce image size */
+  width: 30px;
   margin-right: 8px;
   border-radius: 50%;
 }
@@ -140,6 +142,6 @@ footer {
 
   .panel-item {
     width: 100%;
-    max-width: 100%; /* Ensure links take up full width on smaller screens */
+    max-width: 100%;
   }
 }
