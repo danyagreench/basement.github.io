@@ -21,6 +21,24 @@ document.addEventListener('mouseup', () => {
 	isDragging = false
 })
 
+themeToggle.addEventListener('touchstart', e => {
+	isDragging = true
+	offsetX = e.touches[0].clientX - themeToggle.offsetLeft
+	offsetY = e.touches[0].clientY - themeToggle.offsetTop
+})
+
+document.addEventListener('touchmove', e => {
+	if (isDragging) {
+		e.preventDefault()
+		themeToggle.style.left = `${e.touches[0].clientX - offsetX}px`
+		themeToggle.style.top = `${e.touches[0].clientY - offsetY}px`
+	}
+})
+
+document.addEventListener('touchend', () => {
+	isDragging = false
+})
+
 themeToggle.addEventListener('click', () => {
 	body.classList.toggle('light')
 	if (body.classList.contains('light')) {
