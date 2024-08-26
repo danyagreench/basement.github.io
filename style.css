@@ -157,6 +157,7 @@ footer {
 	cursor: pointer;
 	z-index: 10;
 	transition: transform 0.3s ease;
+	touch-action: none;
 }
 
 #theme-toggle:hover {
