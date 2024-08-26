@@ -11,3 +11,16 @@ themeToggle.addEventListener('click', () => {
 		themeToggle.querySelector('.moon').style.backgroundColor = '#ffcc00'
 	}
 })
+
+window.addEventListener('scroll', () => {
+	const rect = themeToggle.getBoundingClientRect()
+	if (rect.top < 0) {
+		themeToggle.style.position = 'fixed'
+		themeToggle.style.bottom = '20px'
+		themeToggle.style.right = '20px'
+	} else {
+		themeToggle.style.position = 'fixed'
+		themeToggle.style.bottom = 'auto'
+		themeToggle.style.right = '20px'
+	}
+})
