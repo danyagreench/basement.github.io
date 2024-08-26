@@ -17,10 +17,10 @@ window.addEventListener('scroll', () => {
 	if (rect.top < 0) {
 		themeToggle.style.position = 'fixed'
 		themeToggle.style.bottom = '20px'
-		themeToggle.style.right = '20px'
+		themeToggle.style.right = '40px'
 	} else {
 		themeToggle.style.position = 'fixed'
 		themeToggle.style.bottom = 'auto'
-		themeToggle.style.right = '20px'
+		themeToggle.style.right = '40px'
 	}
 })
